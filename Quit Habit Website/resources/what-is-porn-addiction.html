@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about porn addiction, its symptoms, causes, and scientific research behind this behavioral addiction.">
+    <title>What Is Porn Addiction? Understanding the Science and Impact | Quit Habit</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .article-hero {
+            height: 400px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/computerpen.avif');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .article-hero h1 {
+            font-size: 3.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+            justify-content: flex-start;
+        }
+
+        .article-meta p {
+            margin: 0;
+        }
+
+        .key-points {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 1px solid #e5e7eb;
+        }
+
+        .key-points h2 {
+            margin-top: 0;
+            color: var(--primary-blue);
+        }
+
+        .key-points ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+
+        .research-highlight {
+            background: #eef2ff;
+            border-left: 4px solid var(--primary-blue);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: #4a5568;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-blue), #1d4ed8);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .cta-section button {
+            background: white;
+            color: var(--primary-blue);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-section button:hover {
+            transform: translateY(-2px);
+        }
+
+        .references {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 3rem;
+        }
+
+        .references ol {
+            padding-left: 1.5rem;
+            color: #4a5568;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            z-index: 1000;
+            border-bottom: 1px solid #eee;
+            padding: 1rem 2rem;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-link {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-links.show {
+            display: flex;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            background: white;
+            flex-direction: column;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .cta-button {
+            background-color: var(--primary-blue);
+            color: white !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .mobile-menu-button {
+            display: none;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+
+        .menu-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-button {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="../index.html" class="logo-link">
+                <img src="../images/quitlogo.avif" alt="Quit Habit Logo" class="logo">
+            </a>
+            <nav class="nav-links">
+                <a href="../about.html">About</a>
+                <a href="../referral.html">Make A Referral</a>
+                <a href="https://big0b1f8wzy.typeform.com/to/adriFcJE" target="_blank">Pornography Self-Test</a>
+                <a href="../resources.html">Resources</a>
+                <a href="https://calendly.com/hello-quithabit/15min" target="_blank" class="cta-button">Book Appointment</a>
+            </nav>
+            <button class="mobile-menu-button">
+                <span class="sr-only">Open menu</span>
+                <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="article-hero">
+        <img src="../images/computerpen.avif" alt="Computer with pen on desk" class="hero-image">
+        <div class="hero-content">
+            <h1>What Is Porn Addiction?</h1>
+        </div>
+    </div>
+
+    <main class="article-content">
+        <article>
+            <div class="article-meta">
+                <p class="published">Jan 27, 2025</p>
+                <p class="read-time">8 min read</p>
+            </div>
+
+            <div class="key-points">
+                <h2>Key Points</h2>
+                <ul>
+                    <li>Porn addiction is a behavioral addiction affecting mental health and relationships</li>
+                    <li>WHO recognizes Compulsive Sexual Behavior Disorder in ICD-11</li>
+                    <li>Brain chemistry changes mirror those seen in other addictions</li>
+                    <li>Treatment options include CBT, IFS therapy, and professional counseling</li>
+                </ul>
+            </div>
+
+            <p class="lead">Porn addiction, or problematic pornography use, is a behavioral addiction characterized by compulsive consumption of pornography that disrupts a person's daily life, relationships, or mental health. While it is not officially classified as a disorder in the DSM-5, many experts and researchers recognize its potential to negatively impact an individual's well-being and functioning.</p>
+
+            <h2>Understanding Porn Addiction and Brain Chemistry</h2>
+            <p>The World Health Organization (WHO) recently included "Compulsive Sexual Behavior Disorder" (CSBD) in the International Classification of Diseases (ICD-11) as an impulse-control disorder, acknowledging the potential for behaviors like excessive pornography consumption to become problematic.</p>
+
+            <div class="research-highlight">
+                <p><strong>Research Insight:</strong> Studies published in JAMA Psychiatry highlight that individuals with problematic porn use often exhibit similar patterns of compulsivity, loss of control, and functional impairment seen in other addictions (Kraus et al., 2016).</p>
+            </div>
+
+            <h2>How Porn Addiction Affects the Brain</h2>
+            <p>Porn addiction affects the brain's reward system, similar to substance and behavioral addictions. Repeated exposure to pornography can trigger the release of dopamine, a neurotransmitter associated with pleasure and reward.</p>
+
+            <h3>The Tolerance Factor</h3>
+            <p>Over time, frequent porn consumption may desensitize the brain's reward system, requiring increased or more extreme content to achieve the same level of pleasure.</p>
+
+            <div class="research-highlight">
+                <p><strong>Scientific Evidence:</strong> A study in Frontiers in Psychology found that individuals who consumed excessive pornography showed changes in brain activity in regions related to reward processing, similar to those seen in drug addiction (Kuhn & Gallinat, 2014).</p>
+            </div>
+
+            <h2>Signs of Porn Addiction</h2>
+            <p>Porn addiction is not defined solely by the amount of pornography consumed but by how it impacts an individual's life. Signs may include:</p>
+
+            <ul>
+                <li>Loss of Control: Repeated unsuccessful attempts to reduce or stop pornography use</li>
+                <li>Escalation: Consuming increasingly explicit or extreme material</li>
+                <li>Negative Impact: Porn use interferes with relationships, work, or daily responsibilities</li>
+                <li>Emotional Distress: Feelings of guilt, shame, or depression related to porn consumption</li>
+            </ul>
+
+            <h2>The Psychological Impact</h2>
+            <p>Excessive pornography consumption can lead to a range of mental health issues, including:</p>
+
+            <ol>
+                <li><strong>Anxiety and Depression:</strong> Studies have found a correlation between compulsive porn use and higher levels of anxiety and depression (Kor et al., 2014)</li>
+                <li><strong>Relationship Strain:</strong> Porn addiction can lead to decreased intimacy, unrealistic expectations, and trust issues in romantic relationships</li>
+                <li><strong>Erectile Dysfunction:</strong> Research suggests that frequent pornography use may contribute to porn-induced erectile dysfunction (Park et al., 2016)</li>
+            </ol>
+
+            <h2>Treatment Options</h2>
+            <p>Although there is no one-size-fits-all solution for porn addiction, several evidence-based therapies have proven effective, such as CBT, ACT, and IFS, all of which are modalities that Quit Habit therapists utilize in treatment.</p>
+
+            <div class="cta-section">
+                <h2>Get Help for Porn Addiction</h2>
+                <p>If you or someone you know is struggling with porn addiction, Quit Habit offers comprehensive treatment options covered by insurance. Our licensed therapists provide confidential, evidence-based care to help you regain control.</p>
+                <button class="cta" onclick="window.open('https://calendly.com/hello-quithabit/15min', '_blank')">Book a Free Consultation</button>
+            </div>
+
+            <div class="references">
+                <h2>References</h2>
+                <ol>
+                    <li>Kraus, S. W., et al. (2016). Neurobiology of compulsive sexual behavior: Emerging science. JAMA Psychiatry.</li>
+                    <li>Kuhn, S., & Gallinat, J. (2014). Brain structure and functional connectivity associated with pornography consumption.</li>
+                    <li>Grubbs, J. B., et al. (2018). Addiction or transgression? Moral incongruence and self-reported problematic pornography use.</li>
+                    <li>Kor, A., et al. (2014). Psychometric development of the Problematic Pornography Use Scale.</li>
+                    <li>Park, B. Y., et al. (2016). Is internet pornography causing sexual dysfunctions?</li>
+                </ol>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2024 Quit Habit. All rights reserved.</p>
+        <p>If this is a life threatening situation, please call 911 for Emergency Services or 988 for the Suicide and Crisis Lifeline.</p>
+    </footer>
+    <script src="../scripts/mobile-menu.js"></script>
+</body>
+</html> 
